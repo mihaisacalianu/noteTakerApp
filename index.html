@@ -4,23 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Note Taker</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <div class="container">
-        <div class="title"><h1>note taker</h1></div>
-        <div class="subtitle"><h2>add a new note</h2></div>
-        <label for="input-item">note</label>
+        <div class="title title-text"><h1>note taker</h1></div>
+        <div class="subtitle title-text"><h2>add a new note</h2></div>
+        <label for="input-item" class="title-text" id="label-input">note:</label>
         <textarea name="note" id="input-item" placeholder="type your note"></textarea>
         <button class="button" id="button-item">add note</button>
-        <div class="box-item">
-            <div class="box-item-title"><span>note 1</span></div>
+        <div class="box-item1">
+            <div class="box-item-title title-text"><span>note 1</span></div>
             <div class="box-item-content"><span>your note</span></div>
-            <button class="button" id="box-item-button">view note</button>
+            <button class="button" id="box-item-button1">view</button>
         </div>
-        <div class="box-item">
-            <div class="box-item-title"><span>note 1</span></div>
+        <div class="box-item2">
+            <div class="box-item-title title-text"><span>note 1</span></div>
             <div class="box-item-content"><span>your note</span></div>
-            <button class="button" id="box-item-button">view note</button>
+            <button class="button" id="box-item-button2">view</button>
         </div>
     </div>
 </body>
