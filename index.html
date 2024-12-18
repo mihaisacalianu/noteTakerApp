@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Note Taker</title>
     <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js"></script>
 </head>
 <body>
     <div class="container">
@@ -13,16 +14,13 @@
         <label for="input-item" class="title-text" id="label-input">note:</label>
         <textarea name="note" id="input-item" placeholder="type your note"></textarea>
         <button class="button" id="button-item">add note</button>
-        <div class="box-item1">
-            <div class="box-item-title title-text"><span>note 1</span></div>
-            <div class="box-item-content"><span>your note</span></div>
-            <button class="button" id="box-item-button1">view</button>
+        <div class="box">
         </div>
-        <div class="box-item2">
-            <div class="box-item-title title-text"><span>note 1</span></div>
-            <div class="box-item-content"><span>your note</span></div>
-            <button class="button" id="box-item-button2">view</button>
+        <div class="view-note">
+            <button class="close-btn">x</button>
+            <div class="view-note-text-field"></div>
         </div>
     </div>
+  
 </body>
 </html>

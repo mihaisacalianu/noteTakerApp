@@ -10,6 +10,7 @@ body{
     width: 70%;
     margin: auto;
     background-color: #fcf0eb;
+
 }
 button{
     border: 1px solid black;
@@ -64,41 +65,77 @@ button{
     justify-self: center;
 }
 .box-item1{
-    grid-column: 2 / span 2;
+    /* grid-column: 2 / span 2; */
     grid-row: 5 / span 2;
     height: 200px;
     width: 250px;
     border: 1px solid var(--title-font);
     border-radius: 10px;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     margin-right: 1rem;
+    overflow: hidden;
 }
-.box-item2{
-    justify-self: self-end;
-    height: 200px;
-    width: 250px;
-    grid-column: 4 / span 2;
-    grid-row: 5 / span 2;
-    border: 1px solid var(--title-font);
-    border-radius: 10px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+.box{
+   grid-column: 2 / span 4;
+   grid-row: 5;
+   display: flex;
+   width: 100%;
+   height: 100%;
+   justify-content: space-evenly;
 }
+
 .box-item-title{
+    grid-column: 1 / span 2;
+    grid-row: 1;
     justify-self: center;
     align-self: center;
 }
 .box-item-content{
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    justify-self: center;
+    align-self: center;
     padding-left: 1rem;
+    height: 50%;
+    width: 90%;
+    overflow: hidden;
 }
-#box-item-button1{
+.box-item-button1{
     justify-self: center;
     align-self: center;
 }
-#box-item-button2{
+.view-note{
+    border: 1px solid black;
+    border-radius: 10px;
+    grid-column: 3 / span 2;
+    grid-row: 2 / span 4;
+    background-color: var(--title-font);
+    position: relative;
+    z-index: 1;
+    padding: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.9fr;
+    width: 100%;
+    min-width: 100%;
+}
+
+.delete-btn{
     justify-self: center;
     align-self: center;
+}
+
+
+.close-btn{
+    width: 30px;
+    align-self: flex-start;
+    justify-self: flex-end;
+}
+.view-note-text-field{
+    background-color: white;
+    overflow-y: scroll;
+    height: 400px;
+    padding: 0.5rem;
 }
