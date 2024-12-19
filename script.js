@@ -10,8 +10,6 @@ function init (){
     var numberOfBoxes = 1;
     
     const viewNoteTextField = document.querySelector('.view-note-text-field');
-    
-    //boxItem1.style.display = 'none';
     viewNoteItem.style.display = 'none';
 
     addNotBtn.addEventListener('click',addNote);

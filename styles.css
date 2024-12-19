@@ -9,8 +9,7 @@ body{
     font-family: Garamond (serif);
     width: 70%;
     margin: auto;
-    background-color: #fcf0eb;
-
+    background-color:rgb(240,240,240);
 }
 button{
     border: 1px solid black;
@@ -25,7 +24,11 @@ button{
 .container{
     display: grid;
     grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(6, 0.7fr);    
+    grid-template-rows: repeat(6, 0.7fr);  
+    background-color:rgb(230,230,230); 
+    padding-left: 2rem;  
+    padding-right: 2rem;
+    height: 100vh;
 }
 .title-text{
     text-transform: capitalize;
@@ -48,7 +51,7 @@ button{
 #label-input{
     grid-column: 1;
     grid-row: 3;
-    font-size: var(--small-text);
+    font-size: var(--medium-text);
 }
 #input-item{
     grid-column: 2 / span 4 ;
@@ -65,11 +68,11 @@ button{
     justify-self: center;
 }
 .box-item1{
-    /* grid-column: 2 / span 2; */
+    background-color: rgb(249, 249, 196);
     grid-row: 5 / span 2;
     height: 200px;
     width: 250px;
-    border: 1px solid var(--title-font);
+    border: 1px solid black;
     border-radius: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -91,6 +94,7 @@ button{
     grid-row: 1;
     justify-self: center;
     align-self: center;
+    font-size: var(--medium-text);
 }
 .box-item-content{
     grid-column: 1 / span 2;
@@ -101,6 +105,7 @@ button{
     height: 50%;
     width: 90%;
     overflow: hidden;
+    font-size: var(--medium-text);
 }
 .box-item-button1{
     justify-self: center;
